@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/simbir/static/css/main.a617e044.chunk.css",
+    "main.js": "/simbir/static/js/main.1e816fa6.chunk.js",
+    "main.js.map": "/simbir/static/js/main.1e816fa6.chunk.js.map",
+    "runtime-main.js": "/simbir/static/js/runtime-main.f100e44c.js",
+    "runtime-main.js.map": "/simbir/static/js/runtime-main.f100e44c.js.map",
+    "static/js/2.41cb94c6.chunk.js": "/simbir/static/js/2.41cb94c6.chunk.js",
+    "static/js/2.41cb94c6.chunk.js.map": "/simbir/static/js/2.41cb94c6.chunk.js.map",
+    "static/js/3.3070f98c.chunk.js": "/simbir/static/js/3.3070f98c.chunk.js",
+    "static/js/3.3070f98c.chunk.js.map": "/simbir/static/js/3.3070f98c.chunk.js.map",
+    "index.html": "/simbir/index.html",
+    "static/css/main.a617e044.chunk.css.map": "/simbir/static/css/main.a617e044.chunk.css.map",
+    "static/js/2.41cb94c6.chunk.js.LICENSE.txt": "/simbir/static/js/2.41cb94c6.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/simbir/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f100e44c.js",
+    "static/js/2.41cb94c6.chunk.js",
+    "static/css/main.a617e044.chunk.css",
+    "static/js/main.1e816fa6.chunk.js"
+  ]
+}
