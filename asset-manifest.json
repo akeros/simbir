@@ -1,23 +1,37 @@
 {
   "files": {
-    "main.css": "/simbir/static/css/main.a617e044.chunk.css",
-    "main.js": "/simbir/static/js/main.1e816fa6.chunk.js",
-    "main.js.map": "/simbir/static/js/main.1e816fa6.chunk.js.map",
-    "runtime-main.js": "/simbir/static/js/runtime-main.f100e44c.js",
-    "runtime-main.js.map": "/simbir/static/js/runtime-main.f100e44c.js.map",
-    "static/js/2.41cb94c6.chunk.js": "/simbir/static/js/2.41cb94c6.chunk.js",
-    "static/js/2.41cb94c6.chunk.js.map": "/simbir/static/js/2.41cb94c6.chunk.js.map",
-    "static/js/3.3070f98c.chunk.js": "/simbir/static/js/3.3070f98c.chunk.js",
-    "static/js/3.3070f98c.chunk.js.map": "/simbir/static/js/3.3070f98c.chunk.js.map",
+    "main.css": "/simbir/static/css/main.28415d5a.chunk.css",
+    "main.js": "/simbir/static/js/main.bdfa2159.chunk.js",
+    "main.js.map": "/simbir/static/js/main.bdfa2159.chunk.js.map",
+    "runtime-main.js": "/simbir/static/js/runtime-main.6853280a.js",
+    "runtime-main.js.map": "/simbir/static/js/runtime-main.6853280a.js.map",
+    "static/css/2.eaa7dda7.chunk.css": "/simbir/static/css/2.eaa7dda7.chunk.css",
+    "static/js/2.99df673c.chunk.js": "/simbir/static/js/2.99df673c.chunk.js",
+    "static/js/2.99df673c.chunk.js.map": "/simbir/static/js/2.99df673c.chunk.js.map",
+    "static/js/3.72fbbec8.chunk.js": "/simbir/static/js/3.72fbbec8.chunk.js",
+    "static/js/3.72fbbec8.chunk.js.map": "/simbir/static/js/3.72fbbec8.chunk.js.map",
     "index.html": "/simbir/index.html",
-    "static/css/main.a617e044.chunk.css.map": "/simbir/static/css/main.a617e044.chunk.css.map",
-    "static/js/2.41cb94c6.chunk.js.LICENSE.txt": "/simbir/static/js/2.41cb94c6.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/simbir/static/media/logo.6ce24c58.svg"
+    "static/css/2.eaa7dda7.chunk.css.map": "/simbir/static/css/2.eaa7dda7.chunk.css.map",
+    "static/css/main.28415d5a.chunk.css.map": "/simbir/static/css/main.28415d5a.chunk.css.map",
+    "static/js/2.99df673c.chunk.js.LICENSE.txt": "/simbir/static/js/2.99df673c.chunk.js.LICENSE.txt",
+    "static/media/Group.dd9d4bed.svg": "/simbir/static/media/Group.dd9d4bed.svg",
+    "static/media/car-1.6b85e4c6.png": "/simbir/static/media/car-1.6b85e4c6.png",
+    "static/media/car-2.63168488.png": "/simbir/static/media/car-2.63168488.png",
+    "static/media/car-3.3bf60c9c.png": "/simbir/static/media/car-3.3bf60c9c.png",
+    "static/media/car-4.e75d89d5.png": "/simbir/static/media/car-4.e75d89d5.png",
+    "static/media/ellipse.d9a4e522.svg": "/simbir/static/media/ellipse.d9a4e522.svg",
+    "static/media/left.dd0226d1.svg": "/simbir/static/media/left.dd0226d1.svg",
+    "static/media/menu_btn.cec3097c.svg": "/simbir/static/media/menu_btn.cec3097c.svg",
+    "static/media/menu_btn_close.2990540f.svg": "/simbir/static/media/menu_btn_close.2990540f.svg",
+    "static/media/menu_btn_mobile.88e5a78b.svg": "/simbir/static/media/menu_btn_mobile.88e5a78b.svg",
+    "static/media/right.9d87137d.svg": "/simbir/static/media/right.9d87137d.svg",
+    "static/media/slick-theme.css": "/simbir/static/media/slick.c94f7671.ttf"
   },
   "entrypoints": [
-    "static/js/runtime-main.f100e44c.js",
-    "static/js/2.41cb94c6.chunk.js",
-    "static/css/main.a617e044.chunk.css",
-    "static/js/main.1e816fa6.chunk.js"
+    "static/js/runtime-main.6853280a.js",
+    "static/css/2.eaa7dda7.chunk.css",
+    "static/js/2.99df673c.chunk.js",
+    "static/css/main.28415d5a.chunk.css",
+    "static/js/main.bdfa2159.chunk.js"
   ]
 }
