@@ -1,36 +1,39 @@
 import React from 'react';
-import './index.css';
+import classNames from 'classnames';
 import Sidebar from '../../components/Sidebar';
 import Slider from '../../components/Slider';
-import group from './Group.svg';
 import Button from '../../components/Button';
 
-export default function Main() {
-    return (
-        <div className='main-wrapper'>
-            <Sidebar />
-            <div className='main-content'>
-                <div className='main-content-upper'>
-                    <div className='logo'>Need for drive</div>
-                    <div className='main-content-upper-geo'>
-                        <div className='main-content-upper-geo-symbol'><img src={group} alt='menu'/></div>
-                        <div>Ульяновск</div>
-                    </div>
-                </div>
-                <div className='main-content-center'>
-                    <div className='main-content-title'>Каршеринг</div>
-                    <div className='main-content-title text-green'>Need for drive</div>
-                    <div className='main-content-description'>Поминутная аренда авто твоего города</div>
-                    <Button classes='main-content-button'>Забронировать</Button>
-                </div>
-                <div className='main-content-low'>
-                    <div className='main-content-low-left-text'>© 2016-2019 «Need for drive»</div>
-                    <div className='main-content-low-left-phone'>8 (495) 234-22-44</div>
+import group from '../../assets/img/Group.svg';
+
+import styles from './index.module.css';
+
+const Main = () => (
+    <div className={styles.wrapper}>
+        <Sidebar />
+        <div className={styles.content}>
+            <div className={styles.contentUpper}>
+                <div className={styles.logo}>Need for drive</div>
+                <div className={styles.contentUpperGeo}>
+                    <div className={styles.contentUpperGeoSymbol}><img src={group} alt='menu'/></div>
+                    <div>Ульяновск</div>
                 </div>
             </div>
-            <div className='main-slider'>
-                <Slider />
+            <div className={styles.contentCenter}>
+                <div className={styles.contentTitle}>Каршеринг</div>
+                <div className={classNames(styles.contentTitle, styles.textGreen)}>Need for drive</div>
+                <div className={styles.contentDescription}>Поминутная аренда авто твоего города</div>
+                <Button classes={styles.contentButton}>Забронировать</Button>
+            </div>
+            <div className={styles.contentLow}>
+                <div className={styles.contentLowLeftText}>© 2016-2019 «Need for drive»</div>
+                <div className={styles.contentLowLeftPhone}>8 (495) 234-22-44</div>
             </div>
         </div>
-    );
-}
+        <div className={styles.slider}>
+            <Slider />
+        </div>
+    </div>
+);
+
+export default Main;

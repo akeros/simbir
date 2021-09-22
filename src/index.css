@@ -16,3 +16,25 @@ button {
   background: none;
   border: none;
 }
+
+.slick-dots li {
+  width: 8px;
+}
+
+.slick-slide img {
+  display: inline;
+}
+
+.slick-active .dot, .dot:active {
+  background-color: #0EC261;
+}
+
+.dot {
+  height: 8px;
+  width: 8px;
+  border-radius: 4px;
+  background-color: #eee;
+  display: block;
+  position: relative;
+  bottom: 32px;
+}

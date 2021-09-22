@@ -1,22 +1,30 @@
 import React, { PropsWithChildren } from 'react';
-import './index.css';
-import ellipse from './ellipse.svg';
+import classNames from 'classnames';
+
+import ellipse from '../../assets/img/ellipse.svg';
+
+import styles from './index.module.css';
 
 interface IProps {
     classes?: string;
-    colors?: [string, string];
+    color?: 'red' | 'blue' | 'purple';
     loading?: boolean;
     disabled?: boolean;
 }
 
-export default function Button({ classes, colors, loading, disabled, children }: PropsWithChildren<IProps>) {
-    const styles = colors
-        ? { background: `linear-gradient(90deg, ${colors[0]} 0%, ${colors[1]} 100%)` }
-        : {}
+const Button = ({ classes, color, loading, disabled, children }: PropsWithChildren<IProps>) => {
+    const _classes = classNames(classes, {
+        [styles.button]: !color,
+        [styles.buttonBlue]: color === 'blue',
+        [styles.buttonRed]: color === 'red',
+        [styles.buttonPurple]: color === 'purple',
+    });
 
     return (
-        <button className={`button ${classes}`} style={styles} disabled={disabled}>
+        <button className={_classes} disabled={disabled}>
             { loading ? <img src={ ellipse } alt="loading"/> : children}
         </button>
     )
 }
+
+export default Button;

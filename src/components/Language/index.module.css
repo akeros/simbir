@@ -16,6 +16,10 @@
     transition: border 0.2s ease-in, color 0.2s ease-in;
 }
 
+.languageMobile {
+    display: none;
+}
+
 .language:hover {
     border: 1px solid #EEEEEE;
     color: #EEEEEE;
@@ -31,5 +35,9 @@
 @media screen and (max-width: 767px) {
     .language {
         display: none;
+    }
+
+    .languageMobile {
+        display: block;
     }
 }

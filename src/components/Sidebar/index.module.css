@@ -1,0 +1,185 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 64px;
+    height: 100vh;
+    background-color: #151B1F;
+    justify-content: space-between;
+    padding: 28px 0;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.menu {
+    display: block;
+}
+
+.menuMobile,
+.menuCloseMobile {
+    display: none;
+}
+
+.menuCloseMobile {
+    position: absolute;
+    left: 8px;
+    top: 16px;
+}
+
+.menuIcon {
+    width: 32px;
+    height: 32px;
+}
+
+.menuText {
+    color: #0EC261;
+    font-family: Roboto, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 0;
+    text-align: left;
+}
+
+.splash {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 64px;
+    z-index: 999999;
+    display: flex;
+}
+
+.languageMobile {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+}
+
+.splashIconWrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 8px;
+    margin-top: 30px;
+}
+
+.splashIcon {
+    padding-right: 24px;
+}
+
+.splashContent {
+    padding-left: 32px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: #151B1F;
+    max-width: 50%;
+    justify-content: center;
+    position: relative;
+    left: -1px;
+}
+
+.splashTransparent {
+    flex: 1;
+    background-color: #151B1F81;
+    max-width: 50%;
+}
+
+.contentItem {
+    display: flex;
+    padding: 8px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: left;
+    transition: color 0.2s ease-in;
+}
+
+.contentItem:hover {
+    fill: #0EC261;
+    color: #0EC261;
+    transition: color 0.2s ease-out;
+}
+
+.splashIcon .icon {
+    fill: white;
+    transition: fill 0.2s ease-in;
+}
+
+.splashIcon:hover .icon {
+    fill: #0EC261;
+    transition: fill 0.2s ease-out;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    .splashContent {
+        min-width: 60%;
+    }
+
+    .splashTransparent {
+        min-width: 40%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .splashContent {
+        min-width: 100%;
+    }
+
+    .splashTransparent {
+        display: none;
+    }
+
+    .contentItem {
+        font-size: 28px;
+        line-height: 33px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .sidebar {
+        background-color: transparent;
+        position: absolute;
+        padding: 16px;
+    }
+
+    .menuText {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menuMobile,
+    .menuCloseMobile {
+        display: block;
+        left: 28px;
+        top: 28px;
+    }
+
+    .splash {
+        left: 0;
+    }
+
+    .splashContent {
+        min-width: 100%;
+        justify-content: flex-start;
+        padding-top: 80px;
+        padding-left: 28px;
+    }
+
+    .splashTransparent {
+        display: none;
+    }
+
+    .contentItem {
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 26px;
+    }
+}

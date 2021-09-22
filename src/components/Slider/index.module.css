@@ -1,30 +1,34 @@
-.slider-wrapper {
+.wrapper {
     /*display: flex;*/
     /*height: 100vh;*/
 }
 
-.slider-item {
+.item {
     height: 100vh;
     position: relative;
     color: #FFFFFF;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.slider-item-over {
-    padding: 86px;
-    margin-top: 195px;
+.itemOver {
+    padding: 96px;
+    position: relative;
+    top: -120px;
 }
 
-.slider-item-text-h3 {
+.itemTextH3 {
     display: flex;
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     font-size: 40px;
     font-weight: 500;
     font-style: normal;
     color: #FFFFFF;
-
+    margin-bottom: 8px;
 }
 
-.slider-item-text-intro {
+.itemTextIntro {
     display: flex;
     font-size: 24px;
     font-style: normal;
@@ -32,16 +36,14 @@
     font-weight: 300;
     line-height: 22px;
     letter-spacing: 0;
-
+    margin-bottom: 32px;
 }
 
-.slider-item-button {
+.itemButton {
     height: 48px;
     width: 164px;
-    background: linear-gradient(90deg, #13493F 0%, #0C7B1B 100%);
     border-radius: 4px;
-    margin-top: 64px;
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -52,7 +54,7 @@
 
 }
 
-.slider-image-wrapper {
+.imageWrapper {
     position: absolute;
     top: 0;
     left: 0;
@@ -61,13 +63,13 @@
     z-index: -1;
 }
 
-.slider-image {
+.image {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.slider-image-cover {
+.imageCover {
     background-color: #12121260;
     position: absolute;
     top: 0;
@@ -76,25 +78,7 @@
     right: 0;
 }
 
-.slider-dot {
-    height: 8px;
-    width: 8px;
-    border-radius: 4px;
-    background-color: #eee;
-    display: block;
-    position: relative;
-    bottom: 32px;
-}
-
-.slick-dots li {
-    width: 8px;
-}
-
-.slick-active .slider-dot, .slider-dot:active {
-    background-color: #0EC261;
-}
-
-.slider-arrow {
+.arrow {
     height: 100vh;
     width: 64px;
     position: absolute;
@@ -104,7 +88,7 @@
     align-items: center;
 }
 
-.slider-arrow-background {
+.arrowBackground {
     background-color: #0EC26120;
     position: absolute;
     top: 0;
@@ -115,20 +99,26 @@
     transition: opacity 0.2s ease-in;
 }
 
-.slider-back-arrow {
+.backArrow {
     left: 0;
 }
 
-.slider-next-arrow {
+.nextArrow {
     top: 0;
     right: 0;
 }
 
-.slider-arrow-background:hover {
+.arrowBackground:hover {
     opacity: 1;
     transition: opacity 0.2s ease-out;
 }
 
-.slick-slide img {
-    display: inline;
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    .itemOver {
+        top: 0;
+    }
+
+    .arrow {
+        width: 32px;
+    }
 }

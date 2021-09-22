@@ -1,23 +1,27 @@
-import SliderLib from 'react-slick';
-import car1 from './car-1.png';
-import car2 from './car-2.png';
-import car3 from './car-3.png';
-import car4 from './car-4.png';
 import React from 'react';
-import right from '../../pages/Main/right.svg';
-import left from '../../pages/Main/left.svg';
+import SliderLib from 'react-slick';
+
+import Button from '../Button';
+import classNames from 'classnames';
+
+import car1 from '../../assets/img/car-1.png';
+import car2 from '../../assets/img/car-2.png';
+import car3 from '../../assets/img/car-3.png';
+import car4 from '../../assets/img/car-4.png';
+import right from '../../assets/img/right.svg';
+import left from '../../assets/img/left.svg';
 
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import './index.css';
-import Button from '../Button';
+import styles from './index.module.css';
+import '../../index.css';
 
 interface ISlide {
     title: string;
     description: string;
     image: string;
     link: string;
-    colors: [string, string];
+    color?: 'blue' | 'red' | 'purple';
 }
 
 const slides: ISlide[] = [
@@ -26,28 +30,27 @@ const slides: ISlide[] = [
         description: 'Оставляйте машину на платных городских парковках и разрешенных местах, не нарушая ПДД, а также в аэропортах.',
         image: car1,
         link: '#',
-        colors: ['#13493F', '#0C7B1B'],
     },
     {
         title: 'Страховка',
         description: 'Полная страховка страховка автомобиля.',
         image: car2,
         link: '#',
-        colors: ['#132949', '#0C7B67'],
+        color: 'blue',
     },
     {
         title: 'Бензин',
         description: 'Полный бак на любой заправке города за наш счёт.',
         image: car3,
         link: '#',
-        colors: ['#493013', '#7B0C3B'],
+        color: 'red',
     },
     {
         title: 'Обслуживание',
         description: 'Автомобиль проходит еженедельное ТО.',
         image: car4,
         link: '#',
-        colors: ['#281349', '#720C7B'],
+        color: 'purple',
     },
 ];
 
@@ -55,10 +58,10 @@ function NextArrow(props: any) {
     const { onClick } = props;
     return (
         <div
-            className="slider-arrow slider-next-arrow"
+            className={classNames(styles.arrow, styles.nextArrow)}
             onClick={ onClick }
         >
-            <div id='prev-slide' className="slider-arrow-background"/>
+            <div className={styles.arrowBackground} />
             <img src={ right } alt="right"/>
         </div>
     );
@@ -68,22 +71,18 @@ function PrevArrow(props: any) {
     const { onClick } = props;
     return (
         <div
-            className="slider-arrow slider-back-arrow"
+            className={classNames(styles.arrow, styles.backArrow)}
             onClick={ onClick }
         >
-            <div id='next-slide' className="slider-arrow-background"/>
+            <div className={styles.arrowBackground} />
             <img src={ left } alt="left"/>
         </div>
     );
 }
 
-export default function Slider() {
+const Slider = () => {
     const settings = {
-        customPaging: function () {
-            return (
-                <a href="#" className="slider-dot"/>
-            );
-        },
+        customPaging: () => <a href="#" className={'dot'} />,
         dots: true,
         infinite: true,
         speed: 500,
@@ -93,18 +92,18 @@ export default function Slider() {
         prevArrow: <PrevArrow/>,
     };
     return (
-        <div className="slider-wrapper">
+        <div className={styles.wrapper}>
             <SliderLib { ...settings }>
                 { slides.map(slide => (
-                    <div className="slider-item" key={slide.title}>
-                        <div className="slider-image-wrapper">
-                            <img src={ slide.image } alt="car" className="slider-image"/>
-                            <div className="slider-image-cover"/>
+                    <div className={styles.item} key={slide.title}>
+                        <div className={styles.imageWrapper}>
+                            <img src={ slide.image } alt="car" className={styles.image} />
+                            <div className={styles.imageCover} />
                         </div>
-                        <div className="slider-item-over">
-                            <h3 className="slider-item-text-h3">{ slide.title }</h3>
-                            <div className="slider-item-text-intro">{ slide.description }</div>
-                            <Button classes="slider-item-button" colors={ slide.colors }>Подробнее</Button>
+                        <div className={styles.itemOver}>
+                            <h3 className={styles.itemTextH3}>{ slide.title }</h3>
+                            <div className={styles.itemTextIntro}>{ slide.description }</div>
+                            <Button classes={styles.itemButton} color={ slide.color }>Подробнее</Button>
                         </div>
                     </div>
                 )) }
@@ -112,3 +111,5 @@ export default function Slider() {
         </div>
     );
 }
+
+export default Slider;
