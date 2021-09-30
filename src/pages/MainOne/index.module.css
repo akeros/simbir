@@ -1,0 +1,108 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.over {
+    display: flex;
+    flex-direction: column;
+}
+.logo {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+    color: #0EC261;
+}
+
+.razmet {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.colontikul {
+    display: flex;
+    flex-direction: row;
+    min-height: 32px;
+    max-width: 100%;
+    border-bottom: 1px solid #EEEEEE;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.colontikulText {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: #999999;
+    margin-left: 64px;
+}
+
+.razdel{
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+display: flex;
+flex-direction: column;
+flex: 1;
+margin-left: 64px;
+margin-top: 32px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    min-width: 384px;
+    /* flex: 1; */
+}
+
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+    padding: 32px 64px;
+    box-sizing: border-box;
+    max-width: 100%;
+    max-height: 96px;
+    border-bottom: 1px solid #EEEEEE;
+}
+.contentMenu {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    max-height: 32px;
+    border-bottom: 1px solid #EEEEEE;
+}
+.contentUpper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contentUpperGeo {
+    display: flex;
+    align-items: center;
+    color: #999999;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.contentUpperGeoSymbol {
+    display: flex;
+    margin-right: 8px;
+}
