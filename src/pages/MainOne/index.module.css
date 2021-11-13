@@ -10,14 +10,6 @@
     display: flex;
     flex-direction: column;
 }
-.logo {
-    font-family: Roboto, sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 35px;
-    color: #0EC261;
-}
 
 .razmet {
     display: flex;
@@ -25,44 +17,163 @@
     flex: 1;
 }
 
-.colontikul {
-    display: flex;
-    flex-direction: row;
-    min-height: 32px;
-    max-width: 100%;
-    border-bottom: 1px solid #EEEEEE;
-    box-sizing: border-box;
-    align-items: center;
-}
-
-.colontikulText {
+.text {
     font-family: Roboto;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 300;
     font-size: 14px;
     line-height: 16px;
-    color: #999999;
-    margin-left: 64px;
+    color: #121212;
+    margin-top: 42px;
+    margin-bottom: 16px;
 }
 
-.razdel{
+.map {
+    position: relative;
+}
+
+.dot {
+    width: 18px;
+    height: 18px;
+    opacity: 1;
+    transition: opacity ease-out 0.2s;
+}
+
+.dot:hover {
+    opacity: 0.7;
+    transition: opacity ease-in 0.2s;
+}
+.dot:active {
+    opacity: 0.3;
+    transition: opacity ease-in 0.2s;
+}
+
+.dot1 {
+    position: absolute;
+    top: 22px;
+    left: 442px;
+}
+
+.dot2 {
+    position: absolute;
+    top: 125px;
+    left: 494px;
+}
+
+.dot3 {
+    position: absolute;
+    top: 224px;
+    left: 323px;
+}
+
+.dot4 {
+    position: absolute;
+    top: 283px;
+    left: 28px;
+}
+
+.button {
+    margin-top: 32px;
+    width: 100%;
+    height: 48px;
+    background-blend-mode: darken;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.razdel {
     display: flex;
     flex-direction: row;
+    flex: 1;
 }
 
 .left {
-display: flex;
-flex-direction: column;
-flex: 1;
-margin-left: 64px;
-margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-left: 64px;
+    margin-top: 32px;
 }
 
 .right {
     display: flex;
     flex-direction: column;
-    min-width: 384px;
-    /* flex: 1; */
+    width: 384px;
+    border-left: 1px solid #EEEEEE;
+    margin-left: 32px;
+    margin-right: 64px;
+    align-items: center;
+}
+
+.rightTitle {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: right;
+    color: #121212;
+    margin-top: 32px;
+}
+
+.address {
+    display: flex;
+    margin: 32px 0;
+    width: 286px;
+    align-items: flex-end;
+    justify-content: space-between;
+    position: relative;
+}
+
+.pointText {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #121212;
+    padding-right: 12px;
+    background-color: #FFFFFF;
+}
+
+.secondText {
+    padding-left: 12px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #999999;
+    text-align: right;
+    background-color: #FFFFFF;
+}
+
+.separator {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #999999;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: -1;
+}
+
+.price {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #121212;
 }
 
 .content {
@@ -78,31 +189,11 @@ margin-top: 32px;
     max-height: 96px;
     border-bottom: 1px solid #EEEEEE;
 }
+
 .contentMenu {
     display: flex;
     flex-direction: column;
     max-width: 100%;
     max-height: 32px;
     border-bottom: 1px solid #EEEEEE;
-}
-.contentUpper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.contentUpperGeo {
-    display: flex;
-    align-items: center;
-    color: #999999;
-    font-family: Roboto, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
-}
-
-.contentUpperGeoSymbol {
-    display: flex;
-    margin-right: 8px;
 }

@@ -1,0 +1,46 @@
+.wrapper {
+    display: flex;
+    width: 335px;
+    align-items: center;
+    margin: 6px 0;
+    position: relative;
+}
+
+.label {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #121212;
+    padding-right: 8px;
+    width: 94px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.input {
+    border: none;
+    border-bottom: 1px solid #999999;
+    width: 224px;
+    transition: border 0.2s ease-out;
+}
+.input:focus {
+    outline: none;
+    border-color: #121212;
+    transition: border 0.2s ease-in;
+}
+
+.close {
+    position: absolute;
+    right: 12px;
+    top: 0;
+    bottom: 0;
+    width: 8px;
+    height: 8px;
+    display: block;
+}
+
+.hidden {
+    display: none;
+}

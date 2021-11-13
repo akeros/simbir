@@ -1,0 +1,6 @@
+.array {
+    margin: 0 16px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}

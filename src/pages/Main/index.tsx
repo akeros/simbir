@@ -3,8 +3,7 @@ import classNames from 'classnames';
 import Sidebar from '../../components/Sidebar';
 import Slider from '../../components/Slider';
 import Button from '../../components/Button';
-
-import group from '../../assets/img/Group.svg';
+import Header from '../../components/Header';
 
 import styles from './index.module.css';
 
@@ -12,13 +11,7 @@ const Main = () => (
     <div className={styles.wrapper}>
         <Sidebar />
         <div className={styles.content}>
-            <div className={styles.contentUpper}>
-                <div className={styles.logo}>Need for drive</div>
-                <div className={styles.contentUpperGeo}>
-                    <div className={styles.contentUpperGeoSymbol}><img src={group} alt='menu'/></div>
-                    <div>Ульяновск</div>
-                </div>
-            </div>
+            <Header />
             <div className={styles.contentCenter}>
                 <div className={styles.contentTitle}>Каршеринг</div>
                 <div className={classNames(styles.contentTitle, styles.textGreen)}>Need for drive</div>

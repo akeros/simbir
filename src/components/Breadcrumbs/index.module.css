@@ -1,0 +1,23 @@
+.list {
+    display: flex;
+    flex-direction: row;
+    min-height: 32px;
+    max-width: 100%;
+    border-bottom: 1px solid #EEEEEE;
+    box-sizing: border-box;
+    align-items: center;
+    padding-left: 64px;
+}
+
+.listItem {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: #999999;
+}
+
+.activeItem {
+    color: #0EC261;
+}

@@ -1,12 +1,3 @@
-.logo {
-    font-family: Roboto, sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 35px;
-    color: #0EC261;
-}
-
 .wrapper {
     display: flex;
     flex-direction: row;
@@ -31,28 +22,6 @@
     flex-direction: column;
     flex: 1;
     max-width: 50%;
-}
-
-.contentUpper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.contentUpperGeo {
-    display: flex;
-    align-items: center;
-    color: #999999;
-    font-family: Roboto, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
-}
-
-.contentUpperGeoSymbol {
-    display: flex;
-    margin-right: 8px;
 }
 
 .contentCenter {
@@ -159,15 +128,6 @@
     }
     .slider {
         display: none;
-    }
-    .contentUpper {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        padding: 16px;
-    }
-    .logo {
-        align-items: flex-end;
     }
 
     .contentTitle {
