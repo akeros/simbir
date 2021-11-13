@@ -44,9 +44,9 @@
 .splash {
     position: absolute;
     top: 0;
+    left: 64px;
     right: 0;
     bottom: 0;
-    left: 64px;
     z-index: 999999;
     display: flex;
 }
@@ -126,6 +126,10 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .splash {
+        overflow: hidden;
+    }
+
     .splashContent {
         min-width: 100%;
     }
@@ -164,6 +168,9 @@
 
     .splash {
         left: 0;
+        min-width: 100%;
+        min-height: 100%;
+        overflow: hidden;
     }
 
     .splashContent {
