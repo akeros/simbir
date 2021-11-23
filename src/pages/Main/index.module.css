@@ -1,3 +1,11 @@
+.logo {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+    color: #0EC261;
+}
+
 .wrapper {
     display: flex;
     flex-direction: row;
@@ -24,6 +32,27 @@
     max-width: 50%;
 }
 
+.contentUpper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contentUpperGeo {
+    display: flex;
+    align-items: center;
+    color: #999999;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.contentUpperGeoSymbol {
+    display: flex;
+    margin-right: 8px;
+}
+
 .contentCenter {
     display: flex;
     flex-direction: column;
@@ -33,7 +62,6 @@
 
 .contentTitle {
     color: #121212;
-    font-family: Roboto, sans-serif;
     font-size: 70px;
     font-style: normal;
     font-weight: 700;
@@ -49,7 +77,6 @@
 .contentDescription {
     margin-top: 34px;
     color: #999999;
-    font-family: Roboto, sans-serif;
     font-size: 26px;
     font-style: normal;
     font-weight: 300;
@@ -66,7 +93,6 @@
     background: linear-gradient(90deg, #0EC261 2.61%, #039F67 112.6%);
     background-blend-mode: darken;
     border-radius: 8px;
-    font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -83,7 +109,6 @@
 
 .contentLowLeftText {
     color: #999999;
-    font-family: Roboto, sans-serif;
     font-size: 13px;
     font-style: normal;
     font-weight: 400;
@@ -93,7 +118,6 @@
 }
 
 .contentLowLeftPhone {
-    font-family: Roboto, sans-serif;
     font-size: 13px;
     font-style: normal;
     font-weight: 400;
