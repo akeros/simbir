@@ -197,3 +197,46 @@
     max-height: 32px;
     border-bottom: 1px solid #EEEEEE;
 }
+
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    .razdel {
+        display: flex;
+        flex-direction: column;
+        flex: 0;
+    }
+    .left {
+        display: flex;
+        flex-direction: column;
+        margin-left: 64px;
+        margin-top: 32px;
+    }
+}
+
+ @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .razdel {
+        display: flex;
+        flex-direction: column;
+        flex: 0;
+    }
+    .map {
+        display: none;
+    }
+    .text {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+   .razdel {
+        display: flex;
+        flex-direction: column;
+        flex: 0;
+    }
+    .map {
+        display: none;
+    }
+    .text {
+        display: none;
+    }
+}
