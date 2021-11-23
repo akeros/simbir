@@ -164,6 +164,7 @@
         display: block;
         left: 28px;
         top: 28px;
+        z-index: 999999;
     }
 
     .splash {

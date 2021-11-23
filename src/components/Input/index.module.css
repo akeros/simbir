@@ -44,3 +44,12 @@
 .hidden {
     display: none;
 }
+
+@media screen and (max-width: 767px) {
+    .input {
+        width: 190px;
+    }
+    .wrapper {
+        width: auto;
+    }
+}

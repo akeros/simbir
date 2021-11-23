@@ -43,6 +43,7 @@
     opacity: 0.7;
     transition: opacity ease-in 0.2s;
 }
+
 .dot:active {
     opacity: 0.3;
     transition: opacity ease-in 0.2s;
@@ -205,6 +206,11 @@
         flex-direction: column;
         flex: 0;
     }
+
+    .right {
+        border-left: none;
+    }
+
     .left {
         display: flex;
         flex-direction: column;
@@ -213,30 +219,81 @@
     }
 }
 
- @media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
     .razdel {
         display: flex;
         flex-direction: column;
         flex: 0;
     }
-    .map {
-        display: none;
+
+    .right {
+        border-left: none;
     }
+
+    .map {
+        overflow: scroll;
+        width: 550px;
+        height: 300px;
+    }
+
     .text {
         display: none;
     }
 }
 
 @media screen and (max-width: 767px) {
-   .razdel {
+    .content {
+        padding: 0;
+    }
+    .razdel {
         display: flex;
         flex-direction: column;
         flex: 0;
     }
-    .map {
-        display: none;
+
+    .left {
+        margin-left: 8px;
     }
+
+    .price,
+    .address {
+        width: auto;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    .right {
+        display: flex;
+        border-left: none;
+        width: auto;
+        align-items: flex-start;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .rightTitle {
+        text-align: left;
+        margin-left: 8px;
+    }
+
+    .map {
+        overflow: scroll;
+        width: calc(100vw - 16px);
+        height: calc(100vw/1.5);
+
+    }
+
     .text {
         display: none;
+    }
+    div > .button {
+        z-index: 5;
+        height: 50px;
+        border-radius: 0;
+        width: 100vw;
+    }
+
+    .wrapper {
+        overflow-y: scroll;
     }
 }
