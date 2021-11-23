@@ -1,6 +1,5 @@
 .logo {
-    font-family: Roboto, sans-serif;
-    font-style: normal;
+        font-style: normal;
     font-weight: bold;
     font-size: 30px;
     line-height: 35px;
@@ -17,8 +16,7 @@
     display: flex;
     align-items: center;
     color: #999999;
-    font-family: Roboto, sans-serif;
-    font-style: normal;
+        font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 16px;
