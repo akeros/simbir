@@ -1,0 +1,200 @@
+.logo {
+        font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+    color: #0EC261;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+    padding: 32px 64px;
+    box-sizing: border-box;
+    max-width: 50%;
+}
+
+.slider {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: 50%;
+}
+
+.contentUpper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contentUpperGeo {
+    display: flex;
+    align-items: center;
+    color: #999999;
+        font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.contentUpperGeoSymbol {
+    display: flex;
+    margin-right: 8px;
+}
+
+.contentCenter {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -80px;
+}
+
+.contentTitle {
+    color: #121212;
+        font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 66px;
+    letter-spacing: 0;
+    text-align: left;
+}
+
+.textGreen {
+    color: #0EC261;
+}
+
+.contentDescription {
+    margin-top: 34px;
+    color: #999999;
+        font-size: 26px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 0;
+    text-align: left;
+
+}
+
+.contentButton {
+    margin-top: 64px;
+    width: 250px;
+    height: 48px;
+    background: linear-gradient(90deg, #0EC261 2.61%, #039F67 112.6%);
+    background-blend-mode: darken;
+    border-radius: 8px;
+        font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.contentLow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contentLowLeftText {
+    color: #999999;
+        font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0;
+    text-align: left;
+}
+
+.contentLowLeftPhone {
+        font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0;
+    text-align: left;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    .content {
+        max-width: 60%;
+        padding: 32px;
+    }
+    .slider {
+        max-width: 40%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .content {
+        max-width: 100%
+    }
+    .slider {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .content {
+        max-width: 100%;
+        padding: 0;
+    }
+    .slider {
+        display: none;
+    }
+    .contentUpper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 16px;
+    }
+    .logo {
+        align-items: flex-end;
+    }
+
+    .contentTitle {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 100%;
+        padding-left: 16px;
+    }
+    .textGreen {
+        color: #0EC261;
+    }
+    .contentDescription {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 21px;
+        padding-left: 16px;
+    }
+    .contentButton{
+        z-index: 5;
+        height: 50px;
+        border-radius: 0;
+        width: 100%;
+    }
+    .contentLow {
+        padding: 8px 16px;
+        justify-content: space-around;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        height: 72px;
+        background: #151B1F;
+    }
+    .contentLowLeftPhone {
+        color: #0EC261;
+    }
+}

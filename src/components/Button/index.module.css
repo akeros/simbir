@@ -1,0 +1,76 @@
+.button {
+    background: linear-gradient(90deg, #0EC261 2.61%, #039F67 112.6%);
+    background-blend-mode: darken;
+    border-radius: 8px;
+}
+
+.buttonRed {
+    background: linear-gradient(90deg, #493013 2.61%, #7B0C3B 112.6%);
+}
+
+.buttonRed:hover {
+    background: linear-gradient(90deg, #2f1e0d 2.61%, #5d0b2e 112.6%);
+}
+
+.buttonRed:active {
+    background: linear-gradient(90deg, #25180a 2.61%, #520a29 112.6%);
+}
+
+.buttonBlue {
+    background: linear-gradient(90deg, #132949 2.61%, #0C7B67 112.6%);
+}
+
+.buttonBlue:hover {
+    background: linear-gradient(90deg, #0b192c 2.61%, #075245 112.6%);
+}
+
+.buttonBlue:active {
+    background: linear-gradient(90deg, #08121f 2.61%, #074b3f 112.6%);
+}
+
+.buttonPurple {
+    background: linear-gradient(90deg, #281349 2.61%, #720C7B 112.6%);
+}
+
+.buttonPurple:hover {
+    background: linear-gradient(90deg, #140923 2.61%, #46074d 112.6%);
+}
+
+.buttonPurple:active {
+    background: linear-gradient(90deg, #0d0617 2.61%, #3c0641 112.6%);
+}
+
+.button:focus,
+.button:hover {
+    background: linear-gradient(90deg, #0B934A 2.61%, #026E47 112.6%);
+}
+
+.button:active {
+    background: linear-gradient(90deg, #076432 2.61%, #013C27 112.6%);
+}
+
+.button:disabled {
+    background: #EEEEEE;
+}
+
+.button img {
+    animation: rotating 1s linear infinite;
+}
+
+@keyframes rotating {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .button{
+        z-index: 5;
+        height: 50px;
+        border-radius: 0;
+        width: 100%;
+    }
+}
