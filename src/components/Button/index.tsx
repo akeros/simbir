@@ -10,9 +10,10 @@ interface IProps {
     color?: 'red' | 'blue' | 'purple';
     loading?: boolean;
     disabled?: boolean;
+    onClick?(): void;
 }
 
-const Button = ({ classes, color, loading, disabled, children }: PropsWithChildren<IProps>) => {
+const Button = ({ classes, color, loading, disabled, children, onClick}: PropsWithChildren<IProps>) => {
     const _classes = classNames(classes, {
         [styles.button]: !color,
         [styles.buttonBlue]: color === 'blue',
@@ -21,7 +22,7 @@ const Button = ({ classes, color, loading, disabled, children }: PropsWithChildr
     });
 
     return (
-        <button className={_classes} disabled={disabled}>
+        <button className={_classes} disabled={disabled} onClick={onClick} >
             { loading ? <img src={ ellipse } alt="loading"/> : children}
         </button>
     )
