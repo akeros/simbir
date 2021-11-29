@@ -28,7 +28,9 @@ const Sidebar = () => {
           />
         </button>
         { links.map(link => (
-          <a href="#" className={ styles.contentItem } key={ link }>{ link.toUpperCase() }</a>
+          <div>
+            <a href="#" className={ styles.contentItem } key={ link }>{ link.toUpperCase() }</a>
+          </div>
         )) }
         <div className={ classNames(styles.splashIconWrapper) }>
           <a id="telegram" href="#" className={ styles.splashIcon }>

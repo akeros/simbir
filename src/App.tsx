@@ -8,10 +8,11 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 const App = () => (
   <Router basename="/simbir">
       <Routes>
-        <Route path="/" element={<Main />}>
-        </Route>
-        <Route path="/step-one" element={<MainOne />}>
-        </Route>
+        <Route path="/" element={<Main />} />
+        <Route path="/step-one" element={<MainOne />} />
+        <Route path="/step-two" element={<MainOne />} />
+        <Route path="/step-three" element={<MainOne />} />
+        <Route path="/step-four" element={<MainOne />} />
       </Routes>
     </Router>
 )

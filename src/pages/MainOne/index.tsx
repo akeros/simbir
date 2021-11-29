@@ -9,6 +9,9 @@ import map from '../../assets/img/map.svg';
 import dot from '../../assets/img/dot.svg';
 import Button from '../../components/Button';
 import { toCapitalize } from '../../utils';
+import {useAppDispatch, useAppSelector} from "../../hooks";
+import {setFormAddress} from "../../redux/formSlice";
+import {useNavigate} from "react-router";
 
 const dots = [
   'Нариманова 42',
@@ -22,9 +25,25 @@ const cities = [
 ];
 
 const MainOne = () => {
-    const [city, setCity] = useState('Ульяновск');
-    const [address, setAddress] = useState('');
+    const dispatch = useAppDispatch();
+    const form = useAppSelector((state) => state.form)
+    const [city, setCity] = useState(form.city);
+    const [address, setAddress] = useState(form.address);
     const [isSubmit, setSubmit] = useState(false);
+    const navigate = useNavigate();
+    const [isLoading, setLoading] = useState(false);
+
+    useEffect(() => {
+        if (form.city && form.address && isLoading) {
+            setTimeout(() => {
+                navigate('/step-two');
+            }, 300)
+
+            setTimeout(() => {
+                setLoading(false);
+            }, 10000);
+        }
+    }, [form, isLoading])
 
     useEffect(() => {
         if (cities.includes(toCapitalize(city)) && dots.includes(toCapitalize(address))) {
@@ -34,6 +53,11 @@ const MainOne = () => {
         }
     }, [city, address]);
 
+    const onSubmit = () => {
+        dispatch(setFormAddress({city, address}));
+        setLoading(true);
+    };
+
     return (
       <div className={styles.wrapper}>
           <Sidebar />
@@ -41,7 +65,7 @@ const MainOne = () => {
               <div className={styles.content}>
                   <Header />
               </div>
-              <Breadcrumbs activeIndex={0} />
+              <Breadcrumbs />
               <div className={styles.razdel}>
                   <div className={styles.left}>
                       <Input
@@ -82,7 +106,7 @@ const MainOne = () => {
                               <div className={styles.secondText}>{toCapitalize(city)},<br/>{toCapitalize(address)}</div>
                           </div>
                           <div className={styles.price}><b>Цена:</b> от 8 000 до 12 000 ₽</div>
-                          <Button classes={styles.button} disabled={!isSubmit}>Выбрать модель</Button>
+                          <Button classes={styles.button} disabled={!isSubmit} onClick={onSubmit} loading={isLoading}>Выбрать модель</Button>
                       </div>
                   </div>
               </div>

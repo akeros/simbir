@@ -10,10 +10,10 @@ import styles from './index.module.css';
 import { useNavigate } from 'react-router';
 
 const Main = () => {
-    let navigate = useNavigate();
-        function hangleClick() {
+    const navigate = useNavigate();
+    function handleClick() {
         navigate("/step-one")
-};
+    }
 
     return (
     <div className={styles.wrapper}>
@@ -24,7 +24,7 @@ const Main = () => {
                 <div className={styles.contentTitle}>Каршеринг</div>
                 <div className={classNames(styles.contentTitle, styles.textGreen)}>Need for drive</div>
                 <div className={styles.contentDescription}>Поминутная аренда авто твоего города</div>
-                <Button classes={styles.contentButton} onClick={hangleClick}> Забронировать</Button>
+                <Button classes={styles.contentButton} onClick={handleClick}> Забронировать</Button>
             </div>
             <div className={styles.contentLow}>
                 <div className={styles.contentLowLeftText}>© 2016-2019 «Need for drive»</div>

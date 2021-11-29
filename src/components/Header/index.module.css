@@ -1,9 +1,10 @@
 .logo {
-        font-style: normal;
+    font-style: normal;
     font-weight: bold;
     font-size: 30px;
     line-height: 35px;
     color: #0EC261;
+    padding: 0;
 }
 
 .contentUpper {

@@ -10,16 +10,21 @@
 }
 
 .listItem {
-    font-family: Roboto;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
     line-height: 16px;
     color: #999999;
+    padding: 0;
 }
 
 .activeItem {
     color: #0EC261;
+}
+
+.prevItem {;
+    font-weight: bold;
+    color: #121212;
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {

@@ -160,3 +160,11 @@ button {
   position: relative;
   bottom: 32px;
 }
+
+button:hover {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: auto;
+}
